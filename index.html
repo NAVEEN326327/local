@@ -1,177 +1,34 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
-<head>
-<title>Hotel Management</title>
-<link rel="stylesheet" type="text/css" href="index.css"/>
-<link rel="stylesheet" type="text/css" href="dhtmlxcalendar.css"/>
-	
-<script src="dhtmlxcalendar.js"></script>
-	
-<style>
-		#calendar,
-		#calendar2,
-		 	{
-			border: 1px solid #909090;
-			font-family: Tahoma;
-			font-size: 12px;
-			}
-</style>
-	<script>
-		var myCalendar;
-		function doOnLoad() 
-			{
-			myCalendar = new dhtmlXCalendarObject(["calendar","calendar2",]);
-			}
-	</script
-</head>
-<body onload="doOnLoad();">
-<div id="holder"><a href="https://www.co.in"><img src="images/22.jpg" width="200px" height="100px"/></a>
-	 <div id="header">
+    <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1></h1>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
      
-	<ul>
-    	<li><a href="login.html">Login</a></li>
-    	<li><a href="http://localhost/project/overview.html">Overview</a></li>
-    	<li><a href="http://localhost/project/rest/index.html">Restaurant</a></li>
-    	<li><a href="book.html">Booking</a></li>
-        <li><a href="index.html">Home</a></li>
-    	</ul>
-    </div><!--header -->
-	<br> 
-    <div id="ab">
-    <div id="check">
-    <br>
-	<form action="check.php" method="post">
-		<div style="position:relative;height:80px;">
-		<label for="in">Check in:</label> &nbsp;&nbsp;&nbsp;&nbsp;
-            		<input id="calendar" name="in" placeholder="2015-06-02" required="" type="text"> <br><br>
-		
-		<label for="in">Check out:</label> &nbsp;&nbsp;
-            		<input id="calendar2" name="out" placeholder="2015-06-05" required="" type="text"> <br><br>
-		
-		</div>
-			Room Type:
-                <select name="room">
-                    <option value="A/C">A/C</option>
-        			<option value="Non-A/C">Non-A/C</option>
-                </select>
-                <select name="type">
-                    <option value="single">Single</option>
-					<option value="double">Double</option>
-                    <option value="three">Three</option>
-                </select>
-	<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<input type="submit" name="submit" value="submit" />
-	<input type="reset" name="reset" value="Reset" />
-</form>
-   </div><!--chack -->
-   &nbsp;
-   <div id="chat">
-    	<form action="" method="post">
-				<label for="in">Chat</label> 
-					<input id="chat" name="chat" placeholder="message" required=""> 
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<input type="submit" name="submit" value="submit" />
-				</form>
-    </div><!--chat-->
-	<br>
-	<br>
-    <div id="fd"> 
-				<form action="feedback.php" method="post">
-				<label for="in">Feedback</label> 
-					<input id="fd" name="feed" placeholder="Type message" required=""> 
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<input type="submit" name="submit" value="submit" />
-				</form>
-	</div><!--fd-->
-	</div><!--ab-->
-        <br clear="all"/>
- 	<div id="ac">
-    	<h1>A/C</h1>
-    		<div id="a">
-            <br><br><br><br>
-        		&nbsp;&nbsp;	
-           		Single Rs.2000
-          	 	<br>&nbsp;&nbsp;&nbsp;
-                <a href="video.html"><input type="submit" value="View"></a>
-           	<a href="book.html"><input type="submit" value="Booking"></a>
-        	</div><!--a-->
-        	<div id="b">
-          		<br><br><br><br>
-           		&nbsp;&nbsp;&nbsp;
-				Double Rs.3000
-           		 <br>&nbsp;&nbsp;&nbsp;
-                <a href="video.html"><input type="submit" value="View"></a>
-           		<a href="book.html"><input type="submit" value="Booking"></a>
-        	</div><!--b-->
-        	<div id="c">
-        		<br><br><br><br>
-                &nbsp;&nbsp;
-                Three Rs.5000
-                <br>&nbsp;&nbsp;&nbsp;
-               <a href="video.html"><input type="submit" value="View"></a>
-               <a href="book.html"><input type="submit" value="Booking"></a>	
-        	</div><!--c-->
-          </div><!--ac-->
-   
-    <div id="offer">
-    	<h1>Special Offers</h1>
-        	<div id="a1"><p>&nbsp;</p>
-            <br><br>
-      			  Single Bed<br>
-      			  Three Booking<br>For <b>5</b>% discount
-    		</div><!--a1-->
-            <div id="b1"><p>&nbsp;</p><br>
-           <br>
-      			  Double Bed<br>
-      			  Three Booking<br> For <b>10</b>% discount
-    		</div><!--b1-->
-            <div id="c1"><p>&nbsp;</p><br>
-            <br>
-      			  Three Bed<br>
-      			  Three Booking<br> For <b>15</b>% discount
-    		</div><!--c1-->
-    </div><!--offer-->
-    <div id="nonac">
-    	<h1>Non-A/C</h1>
-        	<div id="a2">
-            	&nbsp;<p>&nbsp;</p>
-        		&nbsp;&nbsp;	
-           		Single Rs.1000
-          	 	<br>&nbsp;&nbsp;&nbsp;
-                <a href="video.html"><input type="submit" value="View"></a>
-           		<a href="book.html"><input type="submit" value="Booking"></a>	
-        	</div><!--a2-->
-        	<div id="b2">
-          		&nbsp;<p>&nbsp;</p>
-                &nbsp;&nbsp;
-				Double Rs.2000
-           		 <br>&nbsp;&nbsp;&nbsp;
-                <a href="video.html"><input type="submit" value="View"></a>
-           		 <a href="book.html"><input type="submit" value="Booking"></a>
-        	</div><!--b2-->
-        	<div id="c2">
-        	&nbsp;<p>&nbsp;</p>
-                &nbsp;&nbsp;
-                Three Rs.3500
-                <br>&nbsp;&nbsp;&nbsp;
-                <a href="video.html"><input type="submit" value="View"></a>
-                <a href="book.html"><input type="submit" value="Booking"></a>	
-        	</div><!--c2-->
-    </div><!--nonac-->
-	<div id="rest">
-    	<h1>Special Dishes</h1>
-        	<div id="a3">
-            </div>
-            <div id="b3">
-		<a href="#"></a>
-            </div>
-            <div id="c3">
-            </div>
-	</div><!--rest-->
-</div><!--holder -->
-</body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="">naviworld.com</a>
+         
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Download</a>
+            </li>
+          </ul>
+          </div>
+      </nav>
+    </body>
 </html>
